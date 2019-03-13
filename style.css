@@ -1,4 +1,5 @@
 <style>
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 
 body{
@@ -83,6 +84,14 @@ p{
   color: #6E6E6E;
 }
 
+ul{
+  font-family: "Fira Sans";
+  font-size: 1.25rem;
+  font-weight:300;
+  line-height: 2rem;
+  color: #6E6E6E;
+}
+
 figcaption{
   font-family: "Fira Mono";
   font-size: .875rem;
@@ -128,10 +137,18 @@ flex-wrap: wrap;
 }
 */
 
-.bodyContent{
+
+.bodyContent h2, h3, h4, p, ul{
   margin: auto;
   max-width: 750px;
 }
+
+.narrowImg{
+  margin: auto;
+  max-width: 750px;
+  display:block;
+}
+
 
 .homeContent{
   margin: auto;
@@ -173,5 +190,5 @@ flex-wrap: wrap;
 
 img{
   max-width: 100%;
-}
+
 </style>
