@@ -43,8 +43,8 @@ p, ul, ol, pre, table, blockquote {
   margin-bottom: 1.5rem;
 }
 ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 figcaption{
@@ -142,7 +142,7 @@ border-radius: .5rem;
 
 .parallax {
   /* The image used */
-  background-image: url("IMG_5481.jpg");
+  background-image: url("hero.jpg");
 
   /* Full height */
   height: 100vh;
@@ -153,6 +153,43 @@ border-radius: .5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.homeContent{
+  margin: auto;
+  max-width: 1200px;
+}
+
+.cards{
+  margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.card{
+  min-width: 350px;
+        max-width: 450px;
+        flex: 1 1 450px;
+        /*
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-bottom: 1rem;*/
+        background: #fff;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.card:hover{
+   transform: scale(1.05);
+   box-shadow:4px 4px 16px 0 #ccc;
+
 }
 
 .footernav{
