@@ -1,8 +1,82 @@
-<style>
+html, .root {
+  font-size: 20px;
+  line-height: 30px;
+}
+body, .article {
+  font-family: "Work Sans";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #333;
+}
+h1, .h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+h2, .h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+h3, .h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+h4, .h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
 
+figcaption{
+  font-size: .8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
-body{
-background-color: #fafbfc;
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+a{
+  color: #666;
+  text-decoration: none;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
 }
 
 
@@ -19,141 +93,99 @@ background-color: #fafbfc;
 }
 
 .topnav a{
-  font-family: "Fira Sans";
-  font-size: 1 rem;
-  font-weight:300;
   line-height: 2rem;
   text-transform: uppercase;
-  color: #76808a;
-  text-decoration:none;
 }
 
 li.logo{
   margin-right: auto;
 }
 
-.hero{
-  background-image: url("template/IMG_5548.jpg");
+.title{
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 8.3333%;
+  right: 16.66667%;
+  color: white;
+  text-shadow: 0px 0px 2px #ccc;
+}
 
-  /* Set a specific height */
-  height: 90vh;
 
-  /* Position and center the image to scale nicely on all screens */
+.container {
+  max-width: 33rem;
+  margin-left: 33%;
+
+}
+
+.page img{
+  max-width: 100%;
+}
+
+.imgLarge img{
+margin-left: -25%;
+margin-top: 3rem;
+max-width: 150%;
+}
+
+
+.imgSmall img{
+  max-width: 100%;
+  margin-top: 3rem;
+}
+
+.imgLarge.wireframe img{
+box-shadow: .8rem .8rem 2rem rgba(0, 0, 0, 0.12);
+border-radius: .5rem;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("IMG_5481.jpg");
+
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-h1{
-  font-family: "Fira Sans Condensed";
-  font-size: 4.5rem;
-  font-weight: 500;
-
-}
-
-h2{
-  font-family: "Fira Sans Condensed";
-  font-size: 1.875rem;
-  font-weight: 500;
-  color: #303638;
-}
-
-h3{
-  font-family: "Fira Sans Condensed";
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #303638;
-}
-
-p{
-  font-family: "Fira Sans";
-  font-size: 1.25rem;
-  font-weight:300;
-  line-height: 2rem;
-  color: #6E6E6E;
-}
-
-figcaption{
-  font-family: "Fira Mono";
-  font-size: .875rem;
-  font-weight:300;
-  text-align: center;
-  color: #6E6E6E;
-}
-
-.graybg{
-  background-color: gray;
-  padding: 6rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.flexContainer{
-  display: flex;
-  justify-content: space-around;
-flex-wrap: wrap;
-}
-
-.social{
-  display: flex;
+.footernav{
+  border-top: 1px;
   border-top-style: solid;
-  border-top-color: #AEB4B8;
-  max-width: 750px;
-  margin: auto;
-  justify-content: center;
-}
-  .social img
-  {
-    max-height: 1.5em;
-    padding: 1em;
-  }
-/*
-.headerImg img{
-  width: 100%;
-  max-height: 90vh;
+  border-top-color: #ccc;
+  max-width: 80%;
+  margin: 6rem auto;
 }
 
-.headerImg {
-  max-height: 30vh;
-}
-*/
-
-.bodyContent{
-  margin: auto;
-  max-width: 750px;
-}
-
-.homeContent{
-  margin: auto;
-  max-width: 1000px;
-}
-
-.cards{
+.footernav ul{
   display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: .5em;
+  margin: 0;
 }
 
-.card{
-  display: inline-block;
-  flex: 1 1 275px;
-  background: #fff;
-  padding: 1em;
-  margin: .5em;
-  box-shadow: 2px 2px 4px 0 #ccc;
+.footernav li{
+  margin: 0 1em;
 }
 
-img{
-  max-width: 100%;
+.footernav a{
+  line-height: 2rem;
+  color: #666;
 }
-</style>
+
+li.email{
+  margin-right: auto;
+}
+
+
+  .footernav img
+  {
+    max-height: 1em;
+  }
