@@ -1,9 +1,10 @@
+
 html, .root {
   font-size: 20px;
   line-height: 30px;
 }
 body, .article {
-  font-family: "Work Sans";
+  font-family: "Work Sans", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #333;
@@ -24,7 +25,7 @@ h3, .h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: .5rem;
 }
 h4, .h4 {
   font-size: 1rem;
@@ -104,7 +105,7 @@ li.logo{
 .title{
   text-align: left;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 8.3333%;
   right: 16.66667%;
   color: white;
@@ -155,13 +156,61 @@ border-radius: .5rem;
   background-size: cover;
 }
 
+#brooks {
+  /* The image used */
+  background-image: url("images/brooks/brookshero.svg");
+
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+}
+
+#intel {
+  /* The image used */
+  background-image: url("images/idz/intelhero.png");
+
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+}
+
+#nielsen {
+  /* The image used */
+  background-image: url("images/nielsen/nielsenhero.png");
+
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+}
+
+#auth0 {
+  /* The image used */
+  background-image: url("images/docs/auth0hero.png");
+
+  /* Full height */
+  height: 100vh;
+  width: 100vw;
+
+  /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+}
+
 .homeContent{
   margin: auto;
   max-width: 1200px;
 }
 
 .cards{
-  margin: 0 auto;
+  margin: 3rem auto;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
